@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inline & Block Styling</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      /* Convert li from block to inline in order to list horizontally */
+      li {
+        display: inline;
+      }
+      li a {
+        padding-right: 20px;
+      }
+      /* Convert img from inline to block in order to centre */
+      img {
+        display: block;
+        margin: auto;
+      }
+      /* Convert block to inline-block so that u can control the width of the blocks as well */
+      .box {
+        display: inline-block;
+        width: 32%;
+        background: pink;
+        padding: 20px;
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#">Technology</a></li>
+      <li><a href="#">Business</a></li>
+      <li><a href="#">Fashion</a></li>
+    </ul>
+    <br /><br />
+
+    <img src="./img/leaf.png" alt="Leaf" />
+    <br /><br />
+
+    <div class="box">
+      <h1>Heading 1</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex rerum enim
+        deleniti quam, corporis id, deserunt voluptas nam cupiditate ipsa
+        placeat totam eius quia necessitatibus voluptatem dolorem, dignissimos
+        sit eos.
+      </p>
+    </div>
+    <div class="box">
+      <h1>Heading 2</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex rerum enim
+        deleniti quam, corporis id, deserunt voluptas nam cupiditate ipsa
+        placeat totam eius quia necessitatibus voluptatem dolorem, dignissimos
+        sit eos.
+      </p>
+    </div>
+    <div class="box">
+      <h1>Heading 3</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex rerum enim
+        deleniti quam, corporis id, deserunt voluptas nam cupiditate ipsa
+        placeat totam eius quia necessitatibus voluptatem dolorem, dignissimos
+        sit eos.
+      </p>
+    </div>
+  </body>
+</html>
