@@ -12,7 +12,7 @@
       body {
         font-family: Arial, Helvetica, sans-serif;
       }
-
+      /* Default orders items horizontally */
       .flex-container {
         display: flex;
       }
@@ -25,6 +25,16 @@
         text-align: center;
         border-radius: 10px;
         width: 200px;
+      }
+
+      /* flex-shrink=0 restricts shrinking with vp */
+      .item-1 {
+        flex-shrink: 0;
+      }
+
+      /* flex-grow=1 expands to all empty space in row */
+      .item-2 {
+        flex-grow: 1;
       }
     </style>
   </head>
