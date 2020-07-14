@@ -43,3 +43,17 @@
   background: #28a745;
   color: #fff;
 }
+
+/* Flex Item Utility */
+/* ----------------- */
+
+.flex-items {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.flex-items > div {
+  padding: 20px;
+}
