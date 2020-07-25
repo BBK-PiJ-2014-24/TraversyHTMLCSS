@@ -13,6 +13,7 @@
 .btn {
   cursor: pointer;
   display: inline-block;
+  background-color: #28a745;
   padding: 10px 30px;
   border: none;
   border-radius: 5px;
