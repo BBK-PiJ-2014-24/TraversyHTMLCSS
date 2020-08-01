@@ -41,7 +41,7 @@
   background: #f4f4f4;
   color: #333;
 }
-
+/* Button the same color as background, but with a white border */
 .btn-outline {
   background: transparent;
   color: #fff;
