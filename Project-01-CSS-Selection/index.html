@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS-Selectors</title>
+    <style>
+      /* All p in div */
+      /* ----------- */
+      div p {
+        background: #ddd;
+      }
+
+      /* Direct Child */
+      /* ------------ */
+      div > p {
+        color: teal;
+      }
+
+      /* Sibling Element Order */
+      /* --------------------- */
+      div + p {
+        color: violet;
+      }
+      /* -------------------------- */
+
+      /*Target by Element attribute  */
+      /* --------------------------- */
+      a[target] {
+        background-color: teal;
+        color: thistle;
+        padding: 2px;
+      }
+
+      a[target="_self"] {
+        background: tomato;
+        color: whitesmoke;
+      }
+
+      input[type="text"],
+      input[type="email"] {
+        width: 100%;
+      }
+      /* -------------------------------- */
+
+      /* n'th Child */
+      /* ---------- */
+      li {
+        margin: 0.25rem;
+        padding: 0.25rem;
+        list-style: none;
+      }
+
+      li:first-child {
+        background: red;
+      }
+
+      li:nth-child(3) {
+        background: yellowgreen;
+      }
+
+      li:nth-child(5n + 0) {
+        background: orange;
+      }
+
+      li:nth-child(even) {
+        color: rebeccapurple;
+        font-style: italic;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>Using DOM Hierarchy for CSS Selection</h1>
+      <div>
+        <p>Lorem ipsum dolor sit amet.</p>
+
+        <ul>
+          <li>Item 1</li>
+          <li><p>Item</p></li>
+          <li>Item 3</li>
+        </ul>
+
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+
+      <p>Lorem ipsum dolor sit amet.</p>
+    </section>
+    <section>
+      <h1>Using Element Attributes for CSS Selection</h1>
+      <div>
+        <a href="#">Page 1</a> <a href="#" target="_self">Page 2</a>
+        <a href="http://google.com" target="_blank">Google</a>
+      </div>
+
+      <form action="">
+        <input type="text" placeholder="Name" />
+        <input type="email" placeholder="Email" />
+        <input type="submit" value="Submits" />
+      </form>
+    </section>
+    <section>
+      <h1>n'th Child Selection</h1>
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <li>Item 7</li>
+        <li>Item 8</li>
+        <li>Item 9</li>
+        <li>Item 10</li>
+        <li>Item 11</li>
+        <li>Item 12</li>
+        <li>Item 13</li>
+        <li>Item 14</li>
+        <li>Item 15</li>
+        <li>Item 16</li>
+        <li>Item 17</li>
+        <li>Item 18</li>
+        <li>Item 19</li>
+        <li>Item 20</li>
+      </ul>
+    </section>
+  </body>
+</html>
