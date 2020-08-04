@@ -32,9 +32,42 @@
           top: 300px;
         }
       }
+
+      .box2 {
+        background: coral;
+        height: 200px;
+        width: 200px;
+        position: relative;
+        top: 600px;
+        width: 0;
+        animation: MyAnimation2 5 ease-in 0 1 alternate forwards;
+      }
+
+      @keyframes MyAnimation2 {
+        25% {
+          top: 600px;
+          width: 300px;
+          color: red;
+        }
+
+        50% {
+          top: 900px;
+          width: 600px;
+        }
+
+        75% {
+          top: 900px;
+          width: 0;
+        }
+        100% {
+          top: 600px;
+          width: 300px;
+        }
+      }
     </style>
   </head>
   <body>
     <div class="box"></div>
+    <div class="box2"></div>
   </body>
 </html>
