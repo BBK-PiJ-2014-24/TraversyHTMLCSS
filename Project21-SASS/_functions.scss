@@ -1,0 +1,21 @@
+//  A Function returns. a Mixin is set of styles to include
+
+// Function Set Text Color
+// -----------------------
+
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
+// Mixin
+// -----
+
+@mixin transform_mixin($property) {
+  --webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}

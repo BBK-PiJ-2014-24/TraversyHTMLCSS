@@ -1,0 +1,83 @@
+// Import Partials
+@import "variables";
+@import "functions";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $light-color;
+  color: $dark-color;
+  font-family: $font-stack;
+  line-height: 1.5;
+}
+
+// use of a function
+header {
+  background: $dark-color;
+  color: set-text-color($dark-color);
+  padding: 1rem;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+// Nested
+// ------
+.section {
+  padding: 3rem;
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  &-a {
+    background: $primary-color;
+    color: set-text-color($primary-color);
+  }
+  &-b {
+    background: $secondary-color;
+    color: set-text-color($secondary-color);
+  }
+}
+
+// a {
+//   color: #333;
+
+//   &:hover {
+//     color: coral;
+//   }
+// }
+
+%btn-shared {
+  display: inline-block;
+  padding: 0.7rem 2rem;
+  margin-top: 1rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+// Inheritance & Mixins & Predefined Functions
+// -------------------------------------------
+.btn {
+  &-light {
+    @extend %btn-shared;
+    background-color: $light-color;
+    color: set-text-color($light-color);
+    color: #333;
+    &:hover {
+      @include transform_mixin(rotate(20deg));
+      background-color: darken($light-color, 20%);
+    }
+  }
+
+  &-dark {
+    @extend %btn-shared;
+    background-color: $dark-color;
+    color: set-text-color($dark-color);
+  }
+}
