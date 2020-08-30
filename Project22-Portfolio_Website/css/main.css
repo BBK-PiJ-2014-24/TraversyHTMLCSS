@@ -5,6 +5,23 @@
   overflow: hidden;
 }
 
+.section-title {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 100;
+  padding-bottom: 0.5rem;
+}
+
+.bottom-line {
+  display: block;
+  background: #ffbc00;
+  height: 2px;
+  width: 3rem;
+  margin: 0 auto 1rem auto;
+}
+
 .py-1 {
   padding: 1rem 0;
 }
@@ -211,5 +228,54 @@ img {
 
 #home-b .stats div:nth-child(even) {
   background: #ccc;
+}
+
+#home-c .process {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  grid-gap: 1.5rem;
+}
+
+#home-c .process-icon {
+  position: relative;
+  background: #333;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  padding: 2rem;
+  width: 70px;
+  height: 70px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#home-c .process-icon:hover {
+  background: #ffbc00;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+}
+
+#home-c .process-icon:hover .process-step {
+  background: #333;
+  color: set-text-color(#333);
+}
+
+#home-c .process-step {
+  position: absolute;
+  background: #ffbc00;
+  border-radius: 50%;
+  font-size: 28px;
+  top: 0;
+  right: 0;
+  height: 15px;
+  width: 15px;
+  line-height: 15px;
+  padding: 1rem;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 /*# sourceMappingURL=main.css.map */
