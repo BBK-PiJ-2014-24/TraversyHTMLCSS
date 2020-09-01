@@ -93,6 +93,7 @@ img {
     }
   }
   &-inner {
+    background: $bg-image no-repeat 20% 30% center/cover;
   }
 }
 
@@ -194,8 +195,67 @@ img {
     }
   }
 }
+
+// About Page Sections
+//  ------------------
+#about {
+  &-a {
+    // Grid Template
+    .about-info {
+      display: grid;
+      grid-template-areas:
+        "bioimage bio bio"
+        "aw1 aw2 aw3";
+      grid-gap: 1.2rem;
+    }
+    // Grid Area Layout
+    .bio-image {
+      grid-area: bioimage;
+    }
+
+    .bio {
+      grid-area: bio;
+      border-left: 3px solid $main-color;
+      padding: 0.8rem;
+    }
+
+    .award-1 {
+      grid-area: aw1;
+    }
+    .award-2 {
+      grid-area: aw2;
+    }
+    .award-3 {
+      grid-area: aw3;
+    }
+
+    .award-1 .fas,
+    .award-2 .fas,
+    .award-3 .fas {
+      color: $main-color;
+      margin: 1rem;
+    }
+  }
+  &-b {
+    .progress {
+      background: $medium-color;
+      height: 20px;
+      border-radius: 5px;
+      margin-bottom: 0.6rem;
+      overflow: hidden;
+
+      div {
+        background: $main-color;
+        height: 100%;
+        color: #fff;
+        text-align: center;
+      }
+    }
+  }
+}
+
 // Footer
-// ::-webkit-meter-even-less-good-value
+// ======
 #main-footer {
   background: $dark-color;
   color: #fff;
