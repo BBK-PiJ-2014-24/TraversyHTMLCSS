@@ -1,5 +1,6 @@
 @import "config";
 @import "utilities";
+@import "work";
 
 * {
   padding: 0;
@@ -93,7 +94,7 @@ img {
     }
   }
   &-inner {
-    background: $bg-image no-repeat 20% 30% center/cover;
+    background: $bg-image no-repeat 20% 30% / cover;
   }
 }
 
