@@ -353,7 +353,7 @@ img {
 #about-b .progress {
   background: #ccc;
   height: 20px;
-  border-radius: 5px;
+  border-radius: 15px;
   margin-bottom: 0.6rem;
   overflow: hidden;
 }
@@ -363,6 +363,51 @@ img {
   height: 100%;
   color: #fff;
   text-align: center;
+  border-radius: 15px;
+}
+
+#about-c .about-logos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+
+#about-c img {
+  width: 50%;
+}
+
+#about-d .testimonials {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.5rem;
+}
+
+#about-d p {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+#about-d ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  margin-top: 1rem;
+}
+
+#about-d img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
 }
 
 #main-footer {
