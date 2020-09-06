@@ -329,11 +329,11 @@ img {
     .text-input {
       padding: 0.5rem 1rem;
     }
-  }
 
-  button[type="submit"] {
-    width: 100%;
-    color: red;
+    button[type="submit"] {
+      width: 50%;
+      color: red;
+    }
   }
 
   &-b {

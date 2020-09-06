@@ -571,8 +571,8 @@ img {
   padding: 0.5rem 1rem;
 }
 
-#contact button[type="submit"] {
-  width: 100%;
+#contact-a button[type="submit"] {
+  width: 50%;
   color: red;
 }
 
